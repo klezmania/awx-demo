@@ -1,0 +1,9 @@
+---
+- name: Test ansible tower
+  hosts: web
+  become: true
+  tasks:
+   - name: Ensure nginx is available
+     apt:
+      pkg: nginx
+      state: present
