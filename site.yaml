@@ -3,7 +3,8 @@
   hosts: web
   become: true
   tasks:
-   - name: Ensure nginx is available
+   - name: Ensure nginx is present
      apt:
       pkg: nginx
       state: present
+
